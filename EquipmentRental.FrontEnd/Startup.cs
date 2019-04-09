@@ -45,6 +45,7 @@ namespace EquipmentRental.FrontEnd
 
             services.AddLogging();
             services.AddTransient<IInventoryService, InventoryService>();
+            services.AddTransient<ICartService, CartService>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

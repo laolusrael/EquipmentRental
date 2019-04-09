@@ -1,0 +1,25 @@
+﻿div.page-header, hr{
+    border-color:#9adf3e;
+}
+
+.btn-primary, .btn:hover {
+    background-color: #9adf3e;
+    border: 1px solid #9adf3e;
+}
+
+.btn:hover {
+    box-shadow: 0px 1px 2px #444;
+    color: #fff;
+    background-color: #b6ff00;
+}
+
+h5.card-title{
+    font-weight:bold;
+}
+.margin-top{
+    margin-top:45px!important;
+}
+
+th.total{
+    border-bottom: double #999;
+}

@@ -1,0 +1,142 @@
+﻿@model EquipmentRental.FrontEnd.Models.Home.EquipmentOrderViewModel
+
+@{
+    ViewData["Title"] = "Inventory";
+}
+
+
+
+<div class="card-columns">
+    <div class="card">
+        <h5 class="card-title">Choose your equipment</h5>
+        <div class="card-body">
+
+
+
+            @using (Html.BeginForm("AddToCart", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Equipment
+                            </label>
+                            <select asp-items="@(new SelectList(Model.Equipments,"Id", "Name", Model.SelectedEquipment))" asp-for="SelectedEquipmentId" class="form-control">
+                                <option>Choose Equipment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label class="form-label">Rent for</label>
+                            <input type="text" name="DateRange" value="@Model.DateRange" class="form-control datepicker" />
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label class="form-label">&nbsp;</label>
+                            <input type="submit" value="Add to cart" class="btn btn-primary form-control" />
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+
+
+<div class="card-columns">
+    <div class="card margin-top">
+
+        <div class="card-title">
+            <h3>Cart</h3>
+        </div>
+
+        <div class="card-body">
+
+
+            <div class="card-columns">
+                <div class="card col-md-4">
+                    <img src="http://placehold.it/320x400/" alt="" />
+                </div>
+                <div class="card  col-md-8">
+                    <table class="table table-condensed table-striped">
+                        <thead>
+                            <tr>
+                                <th>Equipment</th>
+                                <th>Rent Days</th>
+                                <th class="text-right">Cost</th>
+                                <th class="text-right"><span title="Actions">...</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bulldozer</td>
+                                <td>6</td>
+                                <td class="text-right">$ 46, 000.00</td>
+                                <td class="text-right"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th class="text-right"><strong>Total</strong></th>
+                                <th class="total text-right">$ 46, 000.00</th>
+                                <td></td>
+                            </tr>
+
+                        </tfoot>
+
+                    </table>
+
+
+                    <br/>
+                    
+                    <ul>
+                        <li><a id="print" href="#">Print Invoice</a></li>
+                        <li><a id="download" href="#">Download Invoice</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Styles{
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+}
+
+@section Scripts {
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+    <script>
+
+
+        $(document).ready(function () {
+
+
+            $('input.datepicker').daterangepicker();
+
+
+        })
+
+    </script>
+
+}

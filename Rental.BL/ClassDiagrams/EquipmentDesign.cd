@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Rental.BL.Equipment" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Rental.BL.RegularEquipment">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rental.BL.HeavyEquipment" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <InheritanceLine Type="Rental.BL.Equipment" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.062" />
+        <Point X="5.25" Y="1.626" />
+        <Point X="5.5" Y="1.626" />
+        <Point X="5.5" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rental.BL.SpecializedEquipment" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rental.BL.EquipmentFactory" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rental.BL.EquipmentItem">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAEgAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Rental.BL.EquipmentInventoryItem">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rental.BL.EquipmentInventory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAAAAAAAAAAAAAAAAAABAAKAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Rental.BL.EquipmentRepositoryBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAgAAAAAAAEAAAIAAAAAAAAAgAAAAAAAgE=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Rental.BL.IEntity">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rental.BL.IEquipment">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rental.BL.IEquipmentItem">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rental.BL.IEquipmentInventory" Collapsed="true">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAABAAIAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Rental.BL.IEquipmentRepository">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAgAAAAAAAEAAAIAAAAAAAAAgAAAAAAAAE=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Rental.BL.EquipmentType" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipments.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
